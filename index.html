@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>EduBalance – Quản lý áp lực học tập</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>EduBalance</h1>
+  <p class="subtitle">Phần mềm đánh giá áp lực học tập học sinh</p>
+
+  <label>Giờ học mỗi ngày:</label>
+  <input type="number" id="studyHours">
+
+  <label>Số bài kiểm tra mỗi tuần:</label>
+  <input type="number" id="tests">
+
+  <label>Mức áp lực điểm số (1–5):</label>
+  <input type="number" id="pressure" min="1" max="5">
+
+  <label>Có kỳ thi sắp tới? (1: Có / 0: Không)</label>
+  <input type="number" id="exam" min="0" max="1">
+
+  <label>Giờ ngủ mỗi ngày:</label>
+  <input type="number" id="sleep">
+
+  <button onclick="calculateStress()">Đánh giá</button>
+
+  <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
